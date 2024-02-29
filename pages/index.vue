@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <div class="im-container flex items-center w-full h-[500px] bg-[#222]">
+    <div class="im-container flex items-center w-full h-[550px] bg-[#222]">
       <div class="w-[40%] h-full relative">
         <BgAnimation class="" />
         <div class="w-60 h-60 rounded-full absolute top-[25%] right-0">
