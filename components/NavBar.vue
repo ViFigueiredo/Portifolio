@@ -20,7 +20,9 @@ const isDark = computed({
 <template>
   <div>
     <slot />
-    <nav class="flex items-center justify-between flex-wrap bg-[#222] p-6">
+    <nav
+      class="flex items-center justify-between flex-wrap bg-[#222] p-6 border-b-2 border-black"
+    >
       <div class="flex items-center flex-shrink-0 text-white mr-6">
         <NuxtLink to="/">
           <span class="font-semibold text-xl tracking-tight">FigCodes</span>
@@ -94,8 +96,4 @@ const isDark = computed({
   </div>
 </template>
 
-<style scoped>
-nav {
-  box-shadow: 2px 2px 2px white;
-}
-</style>
+<style scoped></style>

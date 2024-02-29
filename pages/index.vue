@@ -13,11 +13,11 @@
         </div>
       </div>
       <div class="flex flex-col w-[45%]">
-        <div class="flex flex-col w-full text-center">
+        <div class="flex flex-col w-full text-center text-slate-200">
           <span class="text-6xl">Vinicius Figueiredo</span>
           <span class="text-3xl"> Sou Desenvolvedor Fullstack Web</span>
         </div>
-        <div class="flex w-full justify-center mt-3">
+        <div class="flex w-full justify-center mt-3 text-slate-200">
           <button class="flex border border-solid p-2">
             <UIcon name="i-heroicons-arrow-down-tray" class="text-xl mr-2" />
             <span>Download CV</span>
