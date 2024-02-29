@@ -15,12 +15,16 @@
       <div class="flex flex-col w-[45%]">
         <div class="flex flex-col w-full text-center text-slate-200">
           <span class="text-6xl">Vinicius Figueiredo</span>
-          <span class="text-3xl"> Sou Desenvolvedor Fullstack Web</span>
+          <span class="text-3xl mt-5"> Sou Desenvolvedor Fullstack Web</span>
         </div>
-        <div class="flex w-full justify-center mt-3 text-slate-200">
+        <div class="flex w-full justify-center mt-5 text-slate-200">
           <button class="flex border border-solid p-2">
             <UIcon name="i-heroicons-arrow-down-tray" class="text-xl mr-2" />
-            <span>Download CV</span>
+            <a
+              href="https://www.canva.com/design/DAF5Pv1sx_c/iOV3EAGumiEg2h7JqJZzSA/edit?utm_content=DAF5Pv1sx_c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+              target="_blank"
+              ><span>Download CV</span></a
+            >
           </button>
           <div class="mx-2"></div>
           <button class="flex border border-solid p-2">
