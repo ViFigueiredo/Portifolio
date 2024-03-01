@@ -4,13 +4,13 @@
       <div class="w-[40%] h-full">
         <BgAnimation class="relative" />
 
-        <div class="absolute top-10 right-[15%] text-teal-50 max-w-md">
+        <div class="absolute top-10 h-full right-[15%] text-teal-50 max-w-md">
           <h3>Obrigado por entrar em contato comigo. 😊</h3>
           <br />
-          <span>
+          <span class="">
             Em breve retornarei o contato para tirarmos suas ideias do papel e
-            dar a luz a um grande projeto inovador. 😎
-          </span>
+            dar a luz a um grande projeto inovador. 😎</span
+          >
           <form action="" class="mt-5 space-y-8">
             <UFormGroup required>
               <label for="email" class="text-sm"
