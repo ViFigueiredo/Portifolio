@@ -7,7 +7,7 @@
           <h3>Obrigado por entrar em contato comigo. 😊</h3>
           <br />
           <span class="">
-            Em breve entrarei em contato para tirarmos suas ideias do papel e
+            Em breve retornarei o contato para tirarmos suas ideias do papel e
             dar a luz a um grande projeto inovador. 😎</span
           >
           <form action="" class="mt-5 space-y-8">
