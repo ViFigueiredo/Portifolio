@@ -19,7 +19,7 @@
           <span class="text-3xl mt-5"> Sou Desenvolvedor Fullstack Web</span>
         </div>
         <div class="flex w-full justify-center mt-5 text-slate-200">
-          <button class="flex border border-solid p-2">
+          <button class="flex border border-solid p-2 hover:text-teal-200">
             <UIcon name="i-heroicons-arrow-down-tray" class="text-xl mr-2" />
             <a
               href="https://www.canva.com/design/DAF5Pv1sx_c/iOV3EAGumiEg2h7JqJZzSA/edit?utm_content=DAF5Pv1sx_c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
@@ -28,10 +28,12 @@
             >
           </button>
           <div class="mx-2"></div>
-          <button class="flex border border-solid p-2">
-            <UIcon name="i-heroicons-envelope" class="text-xl mr-2" />
-            <span>Contate me</span>
-          </button>
+          <NuxtLink to="/contact">
+            <button class="flex border border-solid p-2 hover:text-teal-200">
+              <UIcon name="i-heroicons-envelope" class="text-xl mr-2" />
+              <span>Contate me</span>
+            </button>
+          </NuxtLink>
         </div>
       </div>
     </div>
