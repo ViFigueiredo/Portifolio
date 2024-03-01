@@ -5,7 +5,7 @@ interface Rotas {
 
 export default () => {
   const rotas: Rotas[] = [
-    { nome: 'Sobre', path: '/' },
+    { nome: 'Sobre', path: '/#aboutme' },
     { nome: 'Habilidades', path: '/#skills' },
     { nome: 'Projetos', path: '/#projects' },
   ];

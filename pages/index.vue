@@ -4,10 +4,13 @@
     <div class="im-container flex items-center w-full h-[550px] bg-[#222]">
       <div class="w-[40%] h-full relative">
         <BgAnimation class="" />
-        <div class="w-60 h-60 rounded-full absolute top-[25%] right-0">
+        <div
+          class="w-60 h-60 rounded-full absolute top-[25%] right-0 overflow-hidden"
+        >
           <img
-            src="https://avatars.githubusercontent.com/u/67883343?s=400&u=f92f196f0ced5790435c63da5e1041ff654bf194&v=4"
+            src="../assets/img/avatar.png"
             alt="Vinicius Figueiredo"
+            class="w-full h-full object-cover"
           />
         </div>
       </div>
@@ -35,11 +38,11 @@
     </div>
 
     <div class="main-containter">
-      <!-- about me -->
+      <div id="aboutme"></div>
       <div
         class="flex flex-col justify-center mx-16 pb-10 border-b-2 border-gray-300"
       >
-        <h1 id="aboutme" class="text-center text-4xl mt-10">Sobre mim</h1>
+        <h1 class="text-center text-4xl mt-10">Sobre mim</h1>
 
         <div class="flex w-full justify-center space-x-8 mt-10">
           <div
@@ -83,9 +86,9 @@
         </div>
       </div>
 
-      <!-- skills -->
+      <div id="skills"></div>
       <div class="pb-10 border-b-2 border-gray-300 mx-16">
-        <h1 id="skills" class="text-center text-4xl mt-10">Habilidades</h1>
+        <h1 class="text-center text-4xl mt-10">Habilidades</h1>
         <div
           class="mt-8 mx-16 @apply grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-2.5 justify-center p-5 text-sm"
         >
@@ -164,13 +167,113 @@
         </div>
       </div>
 
-      <!-- projects -->
-      <div>
-        <h1 id="projects" class="text-center text-4xl mt-10">Projetos</h1>
+      <div id="projects"></div>
+      <div class="flex flex-col justify-center mx-16 pb-10">
+        <h1 class="text-center text-4xl mt-10">Projetos</h1>
+
+        <div class="mt-10 flex justify-center flex-nowrap space-x-5">
+          <div
+            class="flex flex-col items-center max-w-sm border-2 border-gray-300 p-5 space-y-3"
+          >
+            <div class="flex flex-col w-full">
+              <span class="font-bold">Projeto 1</span>
+              <span>Jul 2023 - Dez 2023</span>
+            </div>
+            <img src="" alt="" class="w-[300px] h-[300px]" />
+            <span class="w-full text-justify text-sm"
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Consectetur ad necessitatibus voluptate facilis modi, ipsum,
+              accusantium excepturi, dolore nihil vitae sapiente! Culpa,
+              inventore minima cumque unde quis officiis facere sint?</span
+            >
+            <span class="w-full text-sm font-bold">
+              Tecnologias: Javascript, HTML3, CSS3...</span
+            >
+            <div class="buttons space-x-3 w-full flex justify-center">
+              <UButton
+                class="hover:bg-green-300 w-[50%] flex justify-center"
+                color="gray"
+                variant="solid"
+                label="Visualizar"
+              />
+              <UButton
+                class="hover:bg-green-300 w-[50%] flex justify-center"
+                color="gray"
+                variant="solid"
+                label="Código Fonte"
+              />
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center max-w-sm border-2 border-gray-300 p-5 space-y-3"
+          >
+            <div class="flex flex-col w-full">
+              <span class="font-bold">Projeto 2</span>
+              <span>Jul 2023 - Dez 2023</span>
+            </div>
+            <img src="" alt="" class="w-[300px] h-[300px]" />
+            <span class="w-full text-justify text-sm"
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Consectetur ad necessitatibus voluptate facilis modi, ipsum,
+              accusantium excepturi, dolore nihil vitae sapiente! Culpa,
+              inventore minima cumque unde quis officiis facere sint?</span
+            >
+            <span class="w-full text-sm font-bold">
+              Tecnologias: Javascript, HTML3, CSS3...</span
+            >
+            <div class="buttons justify-center space-x-3 w-full flex">
+              <UButton
+                class="hover:bg-green-300 w-[50%] flex justify-center"
+                color="gray"
+                variant="solid"
+                label="Visualizar"
+              />
+              <UButton
+                class="hover:bg-green-300 w-[50%] flex justify-center"
+                color="gray"
+                variant="solid"
+                label="Código Fonte"
+              />
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center max-w-sm border-2 border-gray-300 p-5 space-y-3"
+          >
+            <div class="flex flex-col w-full">
+              <span class="font-bold">Projeto 3</span>
+              <span>Jul 2023 - Dez 2023</span>
+            </div>
+            <img src="" alt="" class="w-[300px] h-[300px]" />
+            <span class="w-full text-justify text-sm"
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Consectetur ad necessitatibus voluptate facilis modi, ipsum,
+              accusantium excepturi, dolore nihil vitae sapiente! Culpa,
+              inventore minima cumque unde quis officiis facere sint?</span
+            >
+            <span class="w-full text-sm font-bold">
+              Tecnologias: Javascript, HTML3, CSS3...</span
+            >
+            <div class="flex space-x-3 w-full justify-center">
+              <UButton
+                class="hover:bg-green-300 w-[50%] flex justify-center"
+                color="gray"
+                variant="solid"
+                label="Visualizar"
+              />
+              <UButton
+                class="hover:bg-green-300 w-[50%] flex justify-center"
+                color="gray"
+                variant="solid"
+                label="Código Fonte"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- goToTop -->
     <UButton
       v-show="showButton"
       class="fixed bottom-5 right-5"

@@ -1,12 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  components: [
-    '~/components',
-    {
-      path: '~/shared',
-      prefix: '',
-    },
-  ],
+  components: ['~/components'],
   alias: {
     css: '/assets/css',
   },
