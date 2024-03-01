@@ -25,7 +25,7 @@ const isDark = computed({
     >
       <div class="flex items-center flex-shrink-0 text-white mr-6">
         <NuxtLink to="/">
-          <span class="font-semibold text-xl tracking-tight">FigCodes</span>
+          <span class="font-semibold text-xl tracking-tight">FigCode</span>
         </NuxtLink>
       </div>
       <div class="block lg:hidden">

@@ -170,33 +170,17 @@
       </div>
     </div>
 
-    <!-- goToTop button -->
+    <!-- goToTop -->
     <UButton
       v-show="showButton"
       class="fixed bottom-5 right-5"
       @click="scrollToTop"
     >
       Subir
-      <UIcon class="i-heroicons-arrow-up-circle" />
+      <UIcon name="i-heroicons-arrow-up-circle" />
     </UButton>
   </div>
 </template>
-
-<!-- <script setup>
-import { onMounted } from 'vue';
-
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  });
-};
-
-onMounted(() => {
-  const topoButton = document.querySelector('.topo button');
-  topoButton.addEventListener('click', scrollToTop);
-});
-</script> -->
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
@@ -214,13 +198,10 @@ onUnmounted(() => {
 
 const handleScroll = () => {
   scrollY.value = window.scrollY;
-  showButton.value = scrollY.value > 100; // Altere esse valor conforme necessário para ajustar quando o botão deve aparecer
+  showButton.value = scrollY.value > 100;
 };
 
 const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 </script>
