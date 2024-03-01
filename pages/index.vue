@@ -48,7 +48,10 @@
           <div
             class="flex flex-col text-center justify-center border border-gray-400 p-5 space-y-2 hover:bg-green-300"
           >
-            <UIcon name="i-heroicons-shield-check-20-solid" class="text-xl" />
+            <UIcon
+              name="i-heroicons-shield-check-20-solid"
+              class="text-xl self-center"
+            />
             <span class="font-semibold text-sm">Experiência</span>
             <span class="text-sm">2+ anos</span>
             <span class="text-sm">Fullstack JS</span>
@@ -56,7 +59,10 @@
           <div
             class="flex flex-col text-center justify-center border border-gray-400 p-5 space-y-2 hover:bg-green-300"
           >
-            <UIcon name="i-heroicons-academic-cap-20-solid" class="text-xl" />
+            <UIcon
+              name="i-heroicons-academic-cap-20-solid"
+              class="text-xl self-center"
+            />
             <span class="font-semibold text-sm">Educação</span>
             <span class="text-sm">Tecnólogo</span>
             <span class="text-sm">Análise e Desenvolvimento de Sistemas</span>
