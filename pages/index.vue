@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="relative">
     <!-- header -->
     <div class="im-container flex items-center w-full h-[550px] bg-[#222]">
       <div class="w-[40%] h-full relative">
@@ -86,77 +86,79 @@
       <!-- skills -->
       <div class="pb-10 border-b-2 border-gray-300 mx-16">
         <h1 id="skills" class="text-center text-4xl mt-10">Habilidades</h1>
-        <div class="mt-8 mx-16 grid-container text-sm">
+        <div
+          class="mt-8 mx-16 @apply grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-2.5 justify-center p-5 text-sm"
+        >
           <span
-            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            class="@apply text-center border-solid p-2 border-2 border-gray-300 hover:bg-green-300"
             >HTML5</span
           >
           <span
-            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            class="@apply text-center border-solid p-2 border-2 border-gray-300 hover:bg-green-300"
             >CSS3</span
           >
           <span
-            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            class="@apply text-center border-solid p-2 border-2 border-gray-300 hover:bg-green-300"
             >Javascript</span
           >
           <span
-            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            class="@apply text-center border-solid p-2 border-2 border-gray-300 hover:bg-green-300"
             >Typescript</span
           >
           <span
-            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            class="@apply text-center border-solid p-2 border-2 border-gray-300 hover:bg-green-300"
             >Vue3</span
           >
           <span
-            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            class="@apply text-center border-solid p-2 border-2 border-gray-300 hover:bg-green-300"
             >Nuxt3</span
           >
           <span
-            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            class="@apply text-center border-solid p-2 border-2 border-gray-300 hover:bg-green-300"
             >NuxtUI</span
           >
           <span
-            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            class="@apply text-center border-solid p-2 border-2 border-gray-300 hover:bg-green-300"
             >TailwindCSS</span
           >
           <span
-            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            class="@apply text-center border-solid p-2 border-2 border-gray-300 hover:bg-green-300"
             >Nodejs</span
           >
           <span
-            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            class="@apply text-center border-solid p-2 border-2 border-gray-300 hover:bg-green-300"
             >Sequelize</span
           >
           <span
-            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            class="@apply text-center border-solid p-2 border-2 border-gray-300 hover:bg-green-300"
             >Knex.js</span
           >
           <span
-            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            class="@apply text-center border-solid p-2 border-2 border-gray-300 hover:bg-green-300"
             >Mongoose</span
           >
           <span
-            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            class="@apply text-center border-solid p-2 border-2 border-gray-300 hover:bg-green-300"
             >SGBD</span
           >
           <span
-            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            class="@apply text-center border-solid p-2 border-2 border-gray-300 hover:bg-green-300"
             >Git/Github</span
           >
           <span
-            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            class="@apply text-center border-solid p-2 border-2 border-gray-300 hover:bg-green-300"
             >SQL/NoSQL</span
           >
           <span
-            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            class="@apply text-center border-solid p-2 border-2 border-gray-300 hover:bg-green-300"
             >AWS</span
           >
           <span
-            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            class="@apply text-center border-solid p-2 border-2 border-gray-300 hover:bg-green-300"
             >GCP</span
           >
           <span
-            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            class="@apply text-center border-solid p-2 border-2 border-gray-300 hover:bg-green-300"
             >Linux/WSL</span
           >
         </div>
@@ -167,21 +169,58 @@
         <h1 id="projects" class="text-center text-4xl mt-10">Projetos</h1>
       </div>
     </div>
+
+    <!-- goToTop button -->
+    <UButton
+      v-show="showButton"
+      class="fixed bottom-5 right-5"
+      @click="scrollToTop"
+    >
+      Subir
+      <UIcon class="i-heroicons-arrow-up-circle" />
+    </UButton>
   </div>
 </template>
 
-<style scoped>
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
-  justify-content: center;
-  padding: 20px;
-}
+<!-- <script setup>
+import { onMounted } from 'vue';
 
-.grid-item {
-  padding: 15px;
-  border: 2px solid #ccc;
-  text-align: center;
-}
-</style>
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+};
+
+onMounted(() => {
+  const topoButton = document.querySelector('.topo button');
+  topoButton.addEventListener('click', scrollToTop);
+});
+</script> -->
+
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const scrollY = ref(0);
+const showButton = ref(false);
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
+
+const handleScroll = () => {
+  scrollY.value = window.scrollY;
+  showButton.value = scrollY.value > 100; // Altere esse valor conforme necessário para ajustar quando o botão deve aparecer
+};
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+};
+</script>

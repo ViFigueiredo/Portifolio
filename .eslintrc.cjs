@@ -13,5 +13,6 @@ module.exports = {
   rules: {
     'no-unused-expressions': 'off',
     'no-console': 'off',
+    'vue/no-parsing-error': 0,
   },
 };
