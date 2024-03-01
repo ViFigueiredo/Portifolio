@@ -1,7 +1,6 @@
-<script setup></script>
-
 <template>
   <div>
+    <!-- header -->
     <div class="im-container flex items-center w-full h-[550px] bg-[#222]">
       <div class="w-[40%] h-full relative">
         <BgAnimation class="" />
@@ -35,16 +34,154 @@
       </div>
     </div>
 
-    <div>
-      <h1 id="aboutme" class="text-center text-4xl mt-10">Sobre mim</h1>
-    </div>
+    <div class="main-containter">
+      <!-- about me -->
+      <div
+        class="flex flex-col justify-center mx-16 pb-10 border-b-2 border-gray-300"
+      >
+        <h1 id="aboutme" class="text-center text-4xl mt-10">Sobre mim</h1>
 
-    <div>
-      <h1 id="skills" class="text-center text-4xl mt-10">Habilidades</h1>
-    </div>
+        <div class="flex w-full justify-center space-x-8 mt-10">
+          <div
+            class="flex flex-col text-center justify-center border border-gray-400 p-5 space-y-2 hover:bg-green-300"
+          >
+            <UIcon
+              name="i-heroicons-shield-check-20-solid"
+              class="text-xl w-full"
+            />
+            <span class="font-semibold text-sm">Experiência</span>
+            <span class="text-sm">2+ anos</span>
+            <span class="text-sm">Fullstack JS</span>
+          </div>
+          <div
+            class="flex flex-col text-center justify-center border border-gray-400 p-5 space-y-2 hover:bg-green-300"
+          >
+            <UIcon
+              name="i-heroicons-academic-cap-20-solid"
+              class="text-xl w-full"
+            />
+            <span class="font-semibold text-sm">Educação</span>
+            <span class="text-sm">Tecnólogo</span>
+            <span class="text-sm">Análise e Desenvolvimento de Sistemas</span>
+          </div>
+        </div>
 
-    <div>
-      <h1 id="projects" class="text-center text-4xl mt-10">Projetos</h1>
+        <div class="flex w-full mt-8 text-justify px-20">
+          <span class=""
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+            assumenda voluptatum quam consectetur quo rerum dolores. Tempore
+            ullam illo perspiciatis iusto cupiditate aliquid natus odit in vel
+            modi! Doloremque, eum? Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Velit error suscipit placeat beatae? Ea possimus
+            iure quibusdam ut temporibus blanditiis consectetur, reprehenderit
+            assumenda sed placeat, ipsa perferendis vel exercitationem expedita.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            doloribus ipsa nostrum dolores, rerum consectetur fugiat aliquam
+            nobis vel molestiae animi facere ducimus unde officia, quos suscipit
+            ipsam. Aut, minima.</span
+          >
+        </div>
+      </div>
+
+      <!-- skills -->
+      <div class="pb-10 border-b-2 border-gray-300 mx-16">
+        <h1 id="skills" class="text-center text-4xl mt-10">Habilidades</h1>
+        <div class="mt-8 mx-16 grid-container text-sm">
+          <span
+            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            >HTML5</span
+          >
+          <span
+            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            >CSS3</span
+          >
+          <span
+            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            >Javascript</span
+          >
+          <span
+            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            >Typescript</span
+          >
+          <span
+            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            >Vue3</span
+          >
+          <span
+            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            >Nuxt3</span
+          >
+          <span
+            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            >NuxtUI</span
+          >
+          <span
+            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            >TailwindCSS</span
+          >
+          <span
+            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            >Nodejs</span
+          >
+          <span
+            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            >Sequelize</span
+          >
+          <span
+            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            >Knex.js</span
+          >
+          <span
+            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            >Mongoose</span
+          >
+          <span
+            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            >SGBD</span
+          >
+          <span
+            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            >Git/Github</span
+          >
+          <span
+            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            >SQL/NoSQL</span
+          >
+          <span
+            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            >AWS</span
+          >
+          <span
+            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            >GCP</span
+          >
+          <span
+            class="grid-item p-5 border-2 border-gray-300 hover:bg-green-300"
+            >Linux/WSL</span
+          >
+        </div>
+      </div>
+
+      <!-- projects -->
+      <div>
+        <h1 id="projects" class="text-center text-4xl mt-10">Projetos</h1>
+      </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.grid-item {
+  padding: 15px;
+  border: 2px solid #ccc;
+  text-align: center;
+}
+</style>
