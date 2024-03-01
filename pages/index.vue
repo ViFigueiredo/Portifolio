@@ -1,6 +1,5 @@
 <template>
   <div class="relative">
-    <!-- header -->
     <div class="im-container flex items-center w-full h-[550px] bg-[#222]">
       <div class="w-[40%] h-full relative">
         <BgAnimation class="" />
@@ -36,6 +35,7 @@
         </div>
       </div>
     </div>
+    <!-- header -->
 
     <div class="main-containter">
       <div id="aboutme"></div>
@@ -48,10 +48,7 @@
           <div
             class="flex flex-col text-center justify-center border border-gray-400 p-5 space-y-2 hover:bg-green-300"
           >
-            <UIcon
-              name="i-heroicons-shield-check-20-solid"
-              class="text-xl w-full"
-            />
+            <UIcon name="i-heroicons-shield-check-20-solid" class="text-xl" />
             <span class="font-semibold text-sm">Experiência</span>
             <span class="text-sm">2+ anos</span>
             <span class="text-sm">Fullstack JS</span>
@@ -59,10 +56,7 @@
           <div
             class="flex flex-col text-center justify-center border border-gray-400 p-5 space-y-2 hover:bg-green-300"
           >
-            <UIcon
-              name="i-heroicons-academic-cap-20-solid"
-              class="text-xl w-full"
-            />
+            <UIcon name="i-heroicons-academic-cap-20-solid" class="text-xl" />
             <span class="font-semibold text-sm">Educação</span>
             <span class="text-sm">Tecnólogo</span>
             <span class="text-sm">Análise e Desenvolvimento de Sistemas</span>
@@ -85,6 +79,7 @@
           >
         </div>
       </div>
+      <!-- aboutme -->
 
       <div id="skills"></div>
       <div class="pb-10 border-b-2 border-gray-300 mx-16">
@@ -166,6 +161,7 @@
           >
         </div>
       </div>
+      <!-- skills -->
 
       <div id="projects"></div>
       <div class="flex flex-col justify-center mx-16 pb-10">
@@ -272,6 +268,7 @@
           </div>
         </div>
       </div>
+      <!-- projects -->
     </div>
 
     <UButton
